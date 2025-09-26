@@ -40,8 +40,148 @@
     </nav>
 
     <!-- Inicio de Sección (Introducción)-->
+    <section id="inicio" class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title mb-4">
+                            Protege tu <span class="text-gradient">Mundo Digital</span>
+                        </h1>
+                        <p class="hero-subtitle mb-4">
+                            Aprende sobre ciberseguridad, conoce las amenazas más comunes y descubre cómo
+                            en el entorno digital actual. Tu seguridad online es nuestra prioridad.
+                        </p>
+                        <div class="hero-stats mb-4">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">68.42%</h3>
+                                        <p class="stat-label">Ransomware</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">$4.45M</h3>
+                                        <p class="stat-label">Costo Promedio</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="stat-number">287</h3>
+                                    <p class="stat-label">Días detección</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#amenazas" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-exclamation-triangle me-2"></i>Ver Amenazas
+                        </a>
+                        <a href="#consejo" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-shield-alt me-2"></i>Consejos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-lock"></i>
+                        <span>Seguridad</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Protección</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-eye"></i>
+                        <span>Vigilancia</span>
+                    </div>
+                    <div class="hero-illustration">
+                        <div class="shield-container">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Primera Sección (Amenazas Comunes)-->
+    <section id="amenazas" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Amenazas más comunes</h2>
+                <p class="section-subtitle">
+                    Conoce los principales tipos de ataques y cómo identificarlos.
+                </p>
+            </div>
+
+            <div class="row mb-5">
+                <!-- Phishing -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="threat-card h-100" data-threat="phishing">
+                        <div class="threat-icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h4>Phishing</h4>
+                        <p>
+                            Técnica de ingeniería social que utiliza comunicaciones fraudulentas para engañar a sus víctimas.
+                        </p>
+                        <div class="threat-examples">
+                            <small class="text-muted">Ejemplos: Emails falsos, sitios fraudulentos.</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ransomware -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="threat-card h-100" data-threat="ransomware">
+                        <div class="threat-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Ransomware</h4>
+                        <p>
+                            Malware que encripta archivos de la víctima y exige un rescate para restaurar el acceso.
+                        </p>
+                        <div class="threat-stat">
+                            <span class="stat-highlight">68.42%</span> de ataques en 2022.
+                        </div>
+                    </div>
+                </div>
+                <!-- Malware -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="threat-card h-100" data-threat="malware">
+                        <div class="threat-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h4>Malware</h4>
+                        <p>
+                            Software malicioso diseñado para infiltrarse o dañar un sistema, u obtener acceso no autorizado.
+                        </p>
+                        <div class="threat-examples">
+                            <small class="text-muted">Ejemplos: Virus, Troyanos, Spyware.</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- DDoS -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="threat-card h-100" data-threat="ddos">
+                        <div class="threat-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Ataque DDoS</h4>
+                        <p>
+                            Ataques que sobrecargan un servicio en línea con tráfico excesivo desde múltiples fuentes.
+                        </p>
+                        <div class="threat-examples">
+                            <small class="text-muted">Métodos: Botnets, ataques volumétricos.</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Sección con carrusel -->
 
@@ -52,7 +192,20 @@
     <!-- Modal -->
 
     <!-- Footer -->
-
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5> <i class="fas fa-shield-alt me-2"></i> CiberSeguridad </h5>
+                    <p>Educando sobre seguridad digital para una navegación más segura.</p>
+                </div>
+                <div class="col-lg text-lg-end">
+                    <p>&copy; 2025 Iván Jaque - CiberSeguridad. Proyecto de Portafolio</p>
+                    <p>Desarrollado con <i class="fas fa-heart text-danger"></i> Para la educación en ciberseguridad. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
