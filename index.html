@@ -31,7 +31,7 @@
                     <li class="nav-item">
                         <a href="#amenazas" class="nav-link">Amenazas</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="#consejos" class="nav-link">Consejos</a>
                     </li>
                 </ul>
@@ -77,29 +77,29 @@
                         <a href="#amenazas" class="btn btn-primary btn-lg me-3">
                             <i class="fas fa-exclamation-triangle me-2"></i>Ver Amenazas
                         </a>
-                        <a href="#consejo" class="btn btn-outline-primary btn-lg">
+                        <a href="#consejos" class="btn btn-outline-primary btn-lg">
                             <i class="fas fa-shield-alt me-2"></i>Consejos
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="hero-image">
-                    <div class="floating-card card-1">
-                        <i class="fas fa-lock"></i>
-                        <span>Seguridad</span>
-                    </div>
-                    <div class="floating-card card-2">
-                        <i class="fas fa-user-shield"></i>
-                        <span>Protección</span>
-                    </div>
-                    <div class="floating-card card-3">
-                        <i class="fas fa-eye"></i>
-                        <span>Vigilancia</span>
-                    </div>
-                    <div class="hero-illustration">
-                        <div class="shield-container">
-                            <i class="fas fa-shield-alt"></i>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-lock"></i>
+                            <span>Seguridad</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Protección</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-eye"></i>
+                            <span>Vigilancia</span>
+                        </div>
+                        <div class="hero-illustration">
+                            <div class="shield-container">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,15 +181,276 @@
 
             </div>
         </div>
-    </section>
+
 
     <!-- Sección con carrusel -->
+    <div class="row">
+        <div class="col-12">
+            <h3 class="text-center mb-4">Casos Reales de Ataques</h3>
+            <div id="casosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#casosCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#casosCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#casosCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!--Caso #1-->
+                    <div class="carousel-item active">
+                        <div class="case-card">
+                            <div class="case-header">
+                                <h4>Change Healthcare - UnitedHealth</h4>
+                                <span class="case-date">Febrero 2024</span>
+                            </div>
+                            <div class="case-type">
+                                <span class="badge bg-danger">Ransomware</span>
+                            </div>
+                            <p class="case-description">
+                                Ataque del grupo BlackCat/ALPHV que paralizó el sistema de procesamiento de pagos médicos más grande de EE.UU.
+                            </p>
+                            <div class="case-impact">
+                                <div class="impact-stat">
+                                    <i class="fas fa-user"></i>
+                                    <span>100 millones de registros afectados</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>$2.87 mil millones en costos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Caso #2-->
+                    <div class="carousel-item">
+                        <div class="case-card">
+                            <div class="case-header">
+                                <h4>Ticketmaster</h4>
+                                <span class="case-date">Mayo 2024</span>
+                            </div>
+                            <div class="case-type">
+                                <span class="badge bg-warning">Filtración de Datos</span>
+                            </div>
+                            <p class="case-description">
+                                Grupo ShinyHunters accedió a través de vulnerabilidad en el portal de atención al cliente.
+                            </p>
+                            <div class="case-impact">
+                                <div class="impact-stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>40 millones de clientes afectados.</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <i class="fas fa-database"></i>
+                                    <span>1.3TB de datos robados.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Caso #3-->
+                    <div class="carousel-item">
+                        <div class="case-card">
+                            <div class="case-header">
+                                <h4>Patelco Credit Union</h4>
+                                <span class="case-date">Junio 2024</span>
+                            </div>
+                            <div class="case-type">
+                                <span class="badge bg-warning">Ransomware</span>
+                            </div>
+                            <p class="case-description">
+                                Ataque de Ransomware que deshabilitó la banca en línea y aplicaciones móviles por dos semanas.
+                            </p>
+                            <div class="case-impact">
+                                <div class="impact-stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>726000 registros individuales.</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <i class="fas fa-database"></i>
+                                    <span>2 semanas sin servicios.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#casosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#casosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </section>
 
     <!-- Segunda Sección (Consejos de Seguridad)-->
+    <section id="consejos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Consejos de Seguridad</h2>
+                <p class="section-subtitle">Buenas prácticas para protegerte en línea.</p>
+            </div>
+            <div class="row mb-5">
+                <!--Consejo #1-->
+                <div class="col-lg-6 mb-4">
+                    <div class="tip-category">
+                        <h4> <i class="fas fa-key me-2"></i> Contraseñas </h4>
+                        <ul class="tip-list">
+                            <li>Usar contraseñas únicas y complejas para cada cuenta.</li>
+                            <li>Implementar autenticación de dos factores (2FA) siempre que sea posible.</li>
+                            <li>Utilizar un administrador de contraseñas.</li>
+                            <li>Cambiar contraseñas comprometidas inmediatamente.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Consejo #2-->
+                <div class="col-lg-6 mb-4">
+                    <div class="tip-category">
+                        <h4> <i class="fas fa-sync me-2"></i> Actualizaciones </h4>
+                        <ul class="tip-list">
+                            <li>Mantener sistema operativo actualizado.</li>
+                            <li>Actualizar aplicaciones y plugins regularmente.</li>
+                            <li>Habilitar actualizaciones automáticas cuando sea posible.</li>
+                            <li>Aplicar parches de seguridad rápidamente.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Consejo #3-->
+                <div class="col-lg-6 mb-4">
+                    <div class="tip-category">
+                        <h4> <i class="fas fa-envelope me-2"></i> Email y Enlaces </h4>
+                        <ul class="tip-list">
+                            <li>Ser cauteloso con emails de remitentes desconocidos.</li>
+                            <li>Verificar URLs antes de hacer click.</li>
+                            <li>No descargar archivos adjuntos sospechosos.</li>
+                            <li>Reportar intentos de phishing.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Consejo #4-->
+                <div class="col-lg-6 mb-4">
+                    <div class="tip-category">
+                        <h4> <i class="fas fa-globe me-2"></i> Navegación Segura </h4>
+                        <ul class="tip-list">
+                            <li>Usar conexiones seguras.</li>
+                            <li>Evitar WiFi público para transacciones sensibles.</li>
+                            <li>Mantener browser actualizado.</li>
+                            <li>Usar VPN cuando sea necesario.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     <!-- Formulario -->
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto">
+            <div class="contact-form-container">
+                <h3 class="text-center mb-4">¿Necesitas más información?</h3>
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <select id="asunto" class="form-select">
+                                <option value="#">Selecciona un tema</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="incidente">Reporte de Incidente</option>
+                                <option value="capacitacion">Capacitación</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg" type="submit">
+                            <i class="fas fa-paper-plane me-2"></i> Enviar Consulta
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Botón hacia test de seguridad-->
+    <div class="text-center">
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#quizModal">
+            <i class="fas fa-question-circle me-2"></i> Test de Seguridad
+        </button>
+        <p class="mt-2 text-muted">Pon a prueba tus conocimientos sobre ciberseguridad.</p>
+    </div>
+    </section>
 
     <!-- Modal -->
+    <div class="modal fade" id="quizModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-shield-alt me-2"></i> Test de CiberSeguridad
+                    </h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="quiz-container">
+                        <div id="quiz-intro" class="text-center">
+                            <h4>¿Qué tanto sabes sobre ciberseguridad?</h4>
+                            <p>Responde 8 preguntas y descubre tu nivel de conocimiento</p>
+                            <button class="btn btn-primary" onclick="startQuiz()">
+                                <i class="fas fa-play me-2"></i> Comenzar Test
+                            </button>
+                        </div>
+                        <div id="quiz-question" style="display:none">
+                            <div class="quiz-progress">
+                                <div class="progress mb-3">
+                                    <div class="progress-bar" role="progressbar"></div>
+                                </div>
+                                <span id="question-counter">Pregunta 1 de 8</span>
+                            </div>
+                            <div id="current-question">
+                                <!-- Pregunta actual -->
+                            </div>
+                        </div>
+                        <div id="quiz-results" style="display:none">
+                            <div class="text-center">
+                                <div class="result-score">
+                                    <h3 id="score-display"></h3>
+                                    <p id="score-message"></p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn btn-success me-2" onclick="restartQuiz()">
+                                        <i class="fas fa-redo me-2"></i> Intentar Nuevamente
+                                    </button>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        <i class="fas fa-times me-2"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
